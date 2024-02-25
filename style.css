@@ -1,0 +1,68 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-container{
+  height: 100vh;
+  width: 100vw;
+  background: #E9CCA4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.main-container img{
+  height: 150px;
+  width: 150px;
+  margin: 0 auto
+}
+
+.heart{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 150px;
+  text-align: center;
+}
+
+.heart2{
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 150px;
+  text-align: center;
+}
+
+.heart3{
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 150px;
+  text-align: center;
+}
+
+.heart4{
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  width: 150px;
+  text-align: center;
+}
+
+.heart img, .heart2 img, .heart3 img, .heart4 img{
+  width: 100px;
+  height: 100px;
+}
+
+.heart p, .heart2 p, .heart3 p, .heart4 p{
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.heart:hover p, .heart2:hover p, .heart3:hover p, .heart4:hover p{
+  opacity: 1;
+}
